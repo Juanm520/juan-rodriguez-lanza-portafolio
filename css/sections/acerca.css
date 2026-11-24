@@ -1,0 +1,6 @@
+/* Línea de tiempo del recorrido (Bootstrap no trae timeline) */
+.recorrido { border-left: 2px solid var(--azul-1); padding-left: 20px; }
+.recorrido li { position: relative; padding: 6px 0; }
+.recorrido li::before { content: ''; position: absolute; left: -27px; top: 14px; width: 12px; height: 12px; border-radius: 50%;
+  background: var(--azul-2); border: 2px solid var(--verde); }
+.recorrido b { color: var(--verde); margin-right: 12px; }

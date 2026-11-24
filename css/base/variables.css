@@ -1,0 +1,40 @@
+/* Paleta del moodboard */
+:root {
+  --azul-1: #134074;
+  --azul-2: #0B2545;
+  --azul-3: #13315C;
+  --azul-claro: #8DA9C4;
+  --blanco: #e6eef7;
+  --verde: #7ee2b8;
+  --fondo: #07182e;
+  --tenue: #5f7d9c;
+  --fuente: 'JetBrains Mono', monospace;
+}
+
+/* Variables de Bootstrap adaptadas a la paleta (tema oscuro) */
+[data-bs-theme="dark"] {
+  --bs-body-font-family: var(--fuente);
+  --bs-body-font-size: .9375rem;
+  --bs-body-line-height: 1.7;
+  --bs-body-bg: var(--fondo);
+  --bs-body-color: var(--azul-claro);
+  --bs-emphasis-color: var(--blanco);
+  --bs-emphasis-color-rgb: 230, 238, 247;
+  --bs-heading-color: var(--blanco);
+  --bs-secondary-color: var(--tenue);
+  --bs-secondary-rgb: 141, 169, 196;
+  --bs-tertiary-bg: var(--azul-2);
+  --bs-tertiary-bg-rgb: 11, 37, 69;
+  --bs-border-color: var(--azul-3);
+  --bs-primary: var(--azul-1);
+  --bs-primary-rgb: 19, 64, 116;
+  --bs-primary-border-subtle: var(--azul-1);
+  --bs-link-color: var(--verde);
+  --bs-link-color-rgb: 126, 226, 184;
+  --bs-link-hover-color: #a9f0d2;
+  --bs-link-hover-color-rgb: 169, 240, 210;
+  --bs-code-color: var(--verde);
+  --bs-warning-text-emphasis: #febc2e;
+  --bs-warning-bg-subtle: rgba(254, 188, 46, .08);
+  --bs-warning-border-subtle: #febc2e;
+}

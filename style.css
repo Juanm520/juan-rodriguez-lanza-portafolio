@@ -1,0 +1,14 @@
+/* =========================================================
+   Estilos propios (se cargan DESPUÉS de Bootstrap 5.3).
+   La mayoría del diseño usa clases de Bootstrap en el HTML;
+   aquí solo va la paleta y lo que Bootstrap no trae.
+   Orden: base → layout → componentes → secciones.
+   ========================================================= */
+@import url('css/base/variables.css');
+@import url('css/base/base.css');
+@import url('css/layout/layout.css');
+@import url('css/components/botones.css');
+@import url('css/components/chips.css');
+@import url('css/sections/portafolio.css');
+@import url('css/sections/acerca.css');
+@import url('css/sections/cv.css');

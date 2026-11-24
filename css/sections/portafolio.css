@@ -1,0 +1,20 @@
+/* Tarjetas del portafolio: aparecen al hacer scroll */
+.celda { background: var(--azul-2); border-color: var(--azul-3); overflow: hidden;
+  opacity: 0; transform: translateY(14px); transition: opacity .6s, transform .6s, border-color .2s; }
+.celda.visible { opacity: 1; transform: none; }
+.celda:hover { border-color: var(--azul-1); }
+
+.destacado { background: radial-gradient(circle at 90% 0%, var(--azul-1), var(--azul-2) 65%); }
+.movil { background: linear-gradient(160deg, var(--azul-1), var(--azul-claro)); }
+
+/* Puntos de la leyenda del stack */
+.punto { width: 10px; height: 10px; flex-shrink: 0; }
+
+@media (prefers-reduced-motion: reduce) { .celda { opacity: 1; transform: none; } }
+
+/* Contenedor del proyecto destacado: lo separa visualmente de los otros proyectos */
+.destacado-seccion {
+  border: 1px solid var(--azul-1);
+  background: linear-gradient(180deg, rgba(19, 64, 116, .35), rgba(11, 37, 69, .15));
+  box-shadow: 0 0 0 4px rgba(141, 169, 196, .06), 0 20px 50px rgba(0, 0, 0, .25);
+}
