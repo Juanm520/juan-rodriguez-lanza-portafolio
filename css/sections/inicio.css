@@ -1,0 +1,10 @@
+/* Sección Inicio: presentación y contacto */
+.saludo { color: var(--blanco); font-size: 1.6rem; font-weight: 800; }
+.propuesta { margin-top: 12px; font-size: 1.05rem; max-width: 620px; }
+.contacto-lista { list-style: none; margin-top: 28px; display: grid; gap: 4px; border: 1px solid var(--azul-3); border-radius: 12px;
+  padding: 16px 20px; background: rgba(11,37,69,.6); max-width: 620px; }
+.contacto-lista li { display: grid; grid-template-columns: 110px 1fr; font-size: .88rem; color: var(--blanco); }
+.contacto-lista span { color: var(--tenue); }
+.contacto-lista span::after { content: ' →'; }
+.contacto-lista a { color: var(--verde); text-decoration: none; word-break: break-all; }
+.contacto-lista a:hover { text-decoration: underline; }

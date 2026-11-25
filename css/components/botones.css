@@ -1,0 +1,28 @@
+/* Botón verde con contorno, construido con las variables de botón de Bootstrap */
+.btn-verde {
+  --bs-btn-color: var(--verde);
+  --bs-btn-border-color: var(--verde);
+  --bs-btn-hover-color: var(--verde);
+  --bs-btn-hover-bg: rgba(126, 226, 184, .1);
+  --bs-btn-hover-border-color: var(--verde);
+  --bs-btn-active-color: var(--azul-2);
+  --bs-btn-active-bg: var(--verde);
+  --bs-btn-active-border-color: var(--verde);
+  --bs-btn-focus-shadow-rgb: 126, 226, 184;
+}
+
+/* Enlace de proyecto */
+.enlace { display: inline-block; color: var(--verde); text-decoration: none; font-weight: 700; font-size: .85rem; }
+.enlace:hover { text-decoration: underline; }
+
+/* Botón pequeño azul claro (descargar CV en la columna izquierda) */
+.btn-claro {
+  --bs-btn-color: var(--azul-claro);
+  --bs-btn-border-color: var(--azul-claro);
+  --bs-btn-hover-color: var(--blanco);
+  --bs-btn-hover-bg: rgba(141, 169, 196, .12);
+  --bs-btn-hover-border-color: var(--azul-claro);
+  --bs-btn-active-color: var(--azul-2);
+  --bs-btn-active-bg: var(--azul-claro);
+  --bs-btn-active-border-color: var(--azul-claro);
+}

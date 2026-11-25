@@ -1,0 +1,56 @@
+/* Columna izquierda fija a pantalla completa en escritorio */
+@media (min-width: 992px) {
+  .lateral { height: 100vh; }
+}
+.rol { color: var(--verde); }
+.rol::before { content: '> '; color: var(--tenue); }
+.lema { max-width: 320px; }
+
+/* Navegación con líneas (estilo Brittany Chiang) */
+.nav-lineas a { display: flex; align-items: center; gap: 16px; padding: 8px 0; text-decoration: none; color: inherit;
+  font-size: .75rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; opacity: .55; transition: all .25s; }
+.nav-lineas a::before { content: ''; height: 1px; width: 32px; background: currentColor; transition: width .25s; }
+.nav-lineas a:hover, .nav-lineas a.activo { opacity: 1; color: var(--blanco); }
+.nav-lineas a:hover::before, .nav-lineas a.activo::before { width: 64px; }
+
+.redes a { transition: transform .2s; }
+.redes a:hover { transform: translateY(-2px); }
+
+/* Secciones y títulos tipo terminal */
+.seccion { margin-bottom: 7rem; scroll-margin-top: 3rem; }
+.titulo { font-size: .8rem; color: var(--verde); margin-bottom: 1.5rem; }
+.titulo::before { content: 'juan@dev:~$ '; color: var(--tenue); }
+.subtitulo { color: var(--blanco); font-size: .9rem; margin: 2.5rem 0 .9rem; }
+
+/* ===== Perfil divergente: foto que sale de una forma orgánica + nombre escalonado ===== */
+.perfil { gap: .5rem; }
+.perfil-marco { position: relative; width: 180px; height: 200px; }
+
+.perfil-foto {
+  position: absolute; left: 38%; bottom: 0; top: 5%; width: 210px; height: auto; transform: translateX(-50%);
+  -webkit-mask-image: linear-gradient(to bottom, #000 10%, transparent 100%);
+          mask-image: linear-gradient(to bottom, #000 10%, transparent 100%);
+  
+}
+.perfil-marco:hover .perfil-forma { border-radius: 42% 58% 45% 55% / 55% 45% 55% 45%; transform: rotate(6deg); }
+
+/* Nombre encima de la foto, en escalera: cada línea más a la derecha (Juan arriba a la izquierda, Lanza abajo a la derecha) */
+.perfil { position: relative; }
+.perfil-marco { z-index: 1; }
+.perfil-nombre { position: relative; z-index: 2; margin-top: -5.5rem; font-size: 1.9rem; color: var(--blanco);
+  text-shadow: 0 2px 12px rgba(7, 24, 46, .9), 0 0 2px rgba(7, 24, 46, .9); }
+.perfil-nombre span { display: block; }
+.perfil-nombre .nombre-1 { margin-left: 0; }
+.perfil-nombre .nombre-2 { margin-left: 2.5rem; color: var(--azul-claro); }
+.perfil-nombre .nombre-3 { margin-left: 5rem; }
+.perfil-nombre .nombre-4 { margin-left: 7.5rem; color: transparent; -webkit-text-stroke: 1px var(--azul-claro); text-shadow: none; }
+
+@media (max-width: 400px) {
+  .perfil-marco { width: 140px; height: 160px; }
+  .perfil-foto { width: 140px; }
+  .perfil-nombre { font-size: 1.5rem; margin-top: -4rem; }
+  .perfil-nombre .nombre-2 { margin-left: 1.7rem; }
+  .perfil-nombre .nombre-3 { margin-left: 3.4rem; }
+  .perfil-nombre .nombre-4 { margin-left: 5rem; }
+}
+@media (prefers-reduced-motion: reduce) { .perfil-forma { transition: none; } }

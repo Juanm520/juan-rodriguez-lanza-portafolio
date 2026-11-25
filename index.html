@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan Manuel Rodríguez Lanza · Desarrollador Full Stack Java</title>
+  <meta name="description" content="Portafolio de Juan Manuel Rodríguez Lanza, desarrollador Full Stack Java e Ingeniero de Sistemas en Bogotá, Colombia.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5.3 (CDN) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+  <!-- Estilos propios: paleta del moodboard y lo que Bootstrap no cubre (va después de Bootstrap) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="visually-hidden-focusable position-absolute top-0 start-0 m-2 p-2 bg-light text-dark z-3" href="#contenido">Saltar al contenido</a>
+  <div class="spotlight" id="spotlight"></div>
+
+  <div class="container-xl position-relative z-1">
+    <div class="row gx-lg-5">
+
+      <!-- ===== Columna izquierda ===== -->
+      <header class="col-lg-4 lateral sticky-lg-top d-flex flex-column justify-content-between pt-3 pb-3 pb-lg-4">
+        <div>
+          <!-- Perfil: foto sin fondo que sobresale de una forma orgánica + nombre escalonado -->
+          <div class="perfil">
+            <div class="perfil-marco">
+              <img class="perfil-foto" src="assets/img/perfil-sin-fondo.png" alt="Foto de Juan Manuel Rodríguez Lanza" width="180" height="200">
+            </div>
+            <!-- El nombre va encima de la foto, en escalera inversa (baja hacia la izquierda) -->
+            <h1 class="perfil-nombre fw-bolder lh-1 mb-0">
+              <span class="nombre-1">Juan</span>
+              <span class="nombre-2">Manuel</span>
+              <span class="nombre-3">Rodríguez</span>
+              <span class="nombre-4">Lanza</span>
+            </h1>
+          </div>
+          <p class="rol escribiendo mt-3 mb-0 fw-medium" id="rol"></p>
+          <nav class="d-none d-lg-block mt-4" aria-label="Secciones">
+            <ul class="list-unstyled nav-lineas">
+              <li><a href="#inicio" class="activo">Inicio</a></li>
+              <li><a href="#portafolio">Portafolio</a></li>
+              <li><a href="#acerca-de-mi">Acerca de mí</a></li>
+              <li><a href="#cv">CV</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="redes d-flex flex-wrap align-items-center gap-3 fs-4 mt-4 mt-lg-0">
+          <a class="link-secondary link-underline-opacity-0" href="https://github.com/juanm520/" target="_blank" rel="noopener" aria-label="GitHub"><i class="devicon-github-original"></i></a>
+          <a class="link-secondary link-underline-opacity-0" href="https://www.linkedin.com/in/juanm520-Dev" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="devicon-linkedin-plain"></i></a>
+          <a class="link-secondary link-underline-opacity-0" href="mailto:juanm520@gmail.com" aria-label="Email">✉</a>
+        </div>
+      </header>
+
+      <!-- ===== Contenido ===== -->
+      <main id="contenido" class="col-lg-8 py-4 py-lg-5">
+
+        <!-- INICIO -->
+        <section id="inicio" class="seccion pt-lg-4">
+          <p class="fs-5" style="max-width: 700px">Soy <strong>Desarrollador Web Full Stack</strong> e <strong>Ingeniero de Sistemas.</strong> 
+            Construyo aplicaciones eficientes que automatizan procesos e integran servicios, con resultados medibles favorables.</p>
+          <div class="card bg-body-tertiary rounded-3 mt-4" style="max-width: 620px">
+            <ul class="list-unstyled card-body mb-0 small" aria-label="Información de contacto">
+              <li class="row g-0"><span class="col-4 col-sm-3 text-body-secondary">email →</span><a class="col text-break link-underline-opacity-0" href="mailto:juanm520@gmail.com">juanm520@gmail.com</a></li>
+              <li class="row g-0"><span class="col-4 col-sm-3 text-body-secondary">linkedin →</span><a class="col text-break link-underline-opacity-0" href="https://www.linkedin.com/in/juanm520-Dev" target="_blank" rel="noopener">linkedin.com/in/juanm520-Dev</a></li>
+              <li class="row g-0"><span class="col-4 col-sm-3 text-body-secondary">github →</span><a class="col text-break link-underline-opacity-0" href="https://github.com/juanm520/" target="_blank" rel="noopener">github.com/juanm520</a></li>
+              <li class="row g-0"><span class="col-4 col-sm-3 text-body-secondary">ubicación →</span><span class="col text-body-emphasis">Bogotá, Colombia</span></li>
+            </ul>
+          </div>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a class="btn btn-verde btn-lg fw-bold fs-6" href="mailto:juanm520@gmail.com">Escríbeme</a>
+            <a class="btn btn-verde btn-lg fw-bold fs-6" href="assets/docs/CV-Juan_Manuel_Rodriguez_Lanza.pdf" target="_blank" rel="noopener noreferrer">Descargar CV ↓</a>
+          </div>
+        </section>
+
+        <!-- PORTAFOLIO -->
+        <section id="portafolio" class="seccion">
+          <h2 class="titulo">PORTAFOLIO/</h2>
+          <p class="mb-4">Mis proyectos: En producción, colaborativo y personal.</p>
+
+          <!--  Proyecto destacado -->
+          <div class="destacado-seccion rounded-4 p-3 p-md-4 mb-5">
+            <h3 class="subtitulo mt-0 d-flex align-items-center gap-2"><span class="badge rounded-pill text-bg-warning">★</span># Proyecto destacado</h3>
+            <div class="row g-3">
+              <!-- FiAcademic -->
+              <div class="col-lg-8">
+                <article class="card celda destacado h-100 rounded-4 p-4">
+                  <p class="etiqueta">Producción · Feb 2024 — Jul 2025</p>
+                  <h3 class="h4 fw-bold">FiAcademic</h3>
+                  <p class="small mb-0">Plataforma académica full stack. Frontend con React, Material UI y Tailwind CSS; backend con Node.js y Express, más servicios en Python con Flask. Integrada con Google Apps Script, Google Workspace, Google Cloud y Moodle LMS.</p>
+                  <a class="enlace mt-3" href="https://academico.formarinnovar.com/" target="_blank" rel="noopener">academico.formarinnovar.com ↗</a>
+                </article>
+              </div>
+              <div class="col-lg-4">
+                <div class="card celda h-100 rounded-4 p-4">
+                  <p class="etiqueta">Stack del proyecto (aprox.)</p>
+                  <div class="progress-stacked" id="barra-langs" style="height: 10px"></div>
+                  <ul class="list-unstyled d-grid gap-1 small mt-3 mb-0" id="leyenda"></ul>
+                </div>
+              </div>
+              <!-- Métricas de FiAcademic -->
+              <div class="col-sm-4">
+                <div class="card celda h-100 rounded-4 p-4"><span class="numero display-6 fw-bolder text-body-emphasis lh-1" data-meta="90">0</span><small class="mt-2">% menos tiempo en procesos académicos</small></div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card celda h-100 rounded-4 p-4"><span class="numero display-6 fw-bolder text-body-emphasis lh-1" data-meta="99">0</span><small class="mt-2">% de disponibilidad de los servicios</small></div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card celda h-100 rounded-4 p-4"><span class="numero display-6 fw-bolder text-body-emphasis lh-1" data-meta="100">0</span><small class="mt-2">% de respaldo de la información</small></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== Otros proyectos ===== -->
+          <h3 class="subtitulo"># Otros proyectos</h3>
+          <div class="row g-3">
+            <!-- TuTaller -->
+            <div class="col-12">
+              <article class="card celda h-100 rounded-4 p-4">
+                <p class="etiqueta">Proyecto colaborativo · Equipo de 5</p>
+                <h3 class="h5 fw-bold">TuTaller</h3>
+                <p class="small">Aplicación web para gestion de citas en talleres mecanicos cuyos usuarios son Talleres Mecánicos y los clientes finales
+                  son propietarios de carros y motos, donde se puede: encontrar talleres de mecánica, consultar servicios y cotizaciones, comparar opciones y agendar citas.</p>
+                <p class="small"><strong>Equipo:</strong> Narciris Mena, Laura Torres, Daniel Getial, Aura Rodríguez y yo.</p>
+                <p class="small">Trabajamos con git con ramas <code>main</code> / <code>develop</code> / <code>feature/*</code>, Pull Requests y un modelo de datos relacional (usuarios, vehículos, talleres, servicios y citas).</p>
+                <!-- TODO: describir tu aporte específico, un desafío y cómo lo resolviste -->
+                <p class="alert alert-warning py-2 px-3 small">En este .</p>
+                <h4 class="small text-secondary mt-2 mb-3">Tecnologías</h4>
+                <div class="row row-cols-3 row-cols-sm-4 row-cols-md-6 g-3 text-center" data-tecnologias="tutaller"></div>
+                <a class="enlace mt-3" href="https://github.com/SoyNar/tuTallerPuntoCom" target="_blank" rel="noopener">Código en GitHub ↗</a>
+              </article>
+            </div>
+
+            <!-- Gestor de Tareas (debajo de TuTaller) -->
+            <div class="col-12">
+              <article class="card celda h-100 rounded-4 p-4">
+                <p class="etiqueta">Proyecto personal</p>
+                <h3 class="h5 fw-bold">Gestor de Tareas</h3>
+                <p class="small">Laboratorio en JavaScript y Java con SpringBoot para crear y organizar tareas para evitar la procrastinación. </p>
+                <!-- TODO: características principales, desafío resuelto y captura o demo -->
+                <p class="alert alert-warning py-2 px-3 small">Pendiente: características principales y captura o demo.</p>
+                <h4 class="small text-secondary mt-2 mb-3">Tecnologías</h4>
+                <div class="row row-cols-3 row-cols-sm-4 row-cols-md-6 g-3 text-center" data-tecnologias="gestor"></div>
+                <a class="enlace mt-3" href="https://github.com/Juanm520/Lab_Gestor_Tareas_Juan_Rodriguez" target="_blank" rel="noopener">Código en GitHub ↗</a>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- ACERCA DE MÍ -->
+        <section id="acerca-de-mi" class="seccion">
+          <h2 class="titulo">ACERCA DE MÍ</h2>
+          <p>Desde que empecé Ingeniería de Sistemas en la <strong>UNAD</strong> me ha movido lo mismo: tomar un proceso lento o manual y convertirlo en una herramienta que la gente quiera usar.</p>
+          <p>En <strong>Formar Innovar</strong> pasé de dar soporte técnico a construir la plataforma académica del colegio. Ahí aprendí a escuchar a los usuarios, a medir resultados y a mantener servicios estables en el día a día.</p>
+          <p>Hoy doy el salto al ecosistema <strong>Java</strong> con <strong>Generation Colombia</strong>, para sumar Spring Boot y buenas prácticas de backend a lo que ya sé hacer con JavaScript y Python.</p>
+          <!-- TODO: completar con tu historia: cómo llegaste a programar, qué te apasiona y qué rol buscas -->
+          <p class="alert alert-warning py-2 px-3 small">Pendiente: cómo llegué a la programación, qué me apasiona y qué tipo de rol busco ahora.</p>
+          <ol class="recorrido list-unstyled mt-4 small" aria-label="Mi recorrido">
+            <li><b>2019</b>Empiezo Ingeniería de Sistemas en la UNAD.</li>
+            <li><b>2022</b>Entro a Formar Innovar como desarrollador full stack JavaScript.</li>
+            <li><b>2024</b>Diseño y lanzo FiAcademic, la plataforma académica del colegio.</li>
+            <li><b>2026</b>Me formo como Desarrollador Full Stack Java en Generation Colombia.</li>
+          </ol>
+        </section>
+
+        <!-- CV -->
+        <section id="cv" class="seccion">
+          <h2 class="titulo">CV/</h2>
+          <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+            <p class="mb-0">Resumen de mis logros profesionales y académicos, y de mis habilidades.</p>
+            <a class="btn btn-verde fw-bold" href="assets/docs/CV-Juan_Manuel_Rodriguez_Lanza.pdf" target="_blank" rel="noopener noreferrer">Descargar CV en PDF ↓</a>
+          </div>
+
+          <h3 class="subtitulo"># Experiencia y logros profesionales</h3>
+          <ol class="list-unstyled linea-tiempo">
+            <li class="item row g-2 g-md-3 rounded-3 py-3 px-md-2">
+              <span class="col-md-3 small text-uppercase text-body-secondary">Feb 2022 — Jul 2025</span>
+              <div class="col-md-9">
+                <h4 class="h6 fw-bold mb-0">Desarrollador Full Stack JavaScript</h4>
+                <span class="small text-body-secondary">Formar Innovar Colegio Campestre · Fusagasugá</span>
+                <ul class="small ps-3 mt-2 mb-0">
+                  <li class="mb-1">Diseñé, desarrollé e implementé la plataforma web institucional, reduciendo el tiempo de los procesos académicos y administrativos en al menos un 90%.</li>
+                  <li class="mb-1">Garanticé los requerimientos de procesos administrativos y reportes académicos con respaldo de la información al 100%.</li>
+                  <li>Administré los servicios web y de escritorio propios y de terceros, con soporte de mesa de ayuda y disponibilidad de al menos el 99%.</li>
+                </ul>
+                <div class="d-flex flex-wrap gap-2 mt-3"><span class="badge rounded-pill chip">Node.js</span><span class="badge rounded-pill chip">React</span><span class="badge rounded-pill chip">Python</span><span class="badge rounded-pill chip">HTML</span><span class="badge rounded-pill chip">CSS</span><span class="badge rounded-pill chip">Moodle LMS</span><span class="badge rounded-pill chip">Google Apps Script</span></div>
+              </div>
+            </li>
+          </ol>
+
+          <h3 class="subtitulo"># Formación académica</h3>
+          <ol class="list-unstyled linea-tiempo">
+            <li class="item row g-2 g-md-3 rounded-3 py-3 px-md-2">
+              <span class="col-md-3 small text-uppercase text-body-secondary">Sep 2026 — Dic 2026</span>
+              <div class="col-md-9">
+                <h4 class="h6 fw-bold mb-0">Desarrollador Full Stack Java</h4>
+                <span class="small text-body-secondary">Generation Colombia · Fusagasugá</span>
+                <div class="d-flex flex-wrap gap-2 mt-3"><span class="badge rounded-pill chip">Java</span><span class="badge rounded-pill chip">Spring Boot</span><span class="badge rounded-pill chip">APIs REST</span></div>
+              </div>
+            </li>
+            <li class="item row g-2 g-md-3 rounded-3 py-3 px-md-2">
+              <span class="col-md-3 small text-uppercase text-body-secondary">Feb 2019 — Dic 2026</span>
+              <div class="col-md-9">
+                <h4 class="h6 fw-bold mb-0">Ingeniería de Sistemas</h4>
+                <span class="small text-body-secondary">Universidad Nacional Abierta y a Distancia (UNAD) · Fusagasugá</span>
+              </div>
+            </li>
+            <li class="item row g-2 g-md-3 rounded-3 py-3 px-md-2">
+              <span class="col-md-3 small text-uppercase text-body-secondary">Cursos</span>
+              <div class="col-md-9">
+                <h4 class="h6 fw-bold">Cursos y certificaciones</h4>
+                <ul class="list-unstyled small mb-0">
+                  <li class="row g-1 g-sm-2 py-2 border-top">
+                    <span class="col-sm-4 small text-uppercase text-body-secondary">Ene 2025 — Mar 2025</span>
+                    <div class="col-sm-8"><span class="fw-bold text-body-emphasis">Backend con Python (microcredencial)</span><br><span class="small text-body-secondary">Universidad de los Andes · 80 h · <a class="link-underline-opacity-0" href="https://wallet.xertify.co/certificates/1E9AC6F0A002" target="_blank" rel="noopener">Validar ↗</a></span></div>
+                  </li>
+                  <li class="row g-1 g-sm-2 py-2 border-top">
+                    <span class="col-sm-4 small text-uppercase text-body-secondary">Ago 2024</span>
+                    <div class="col-sm-8"><span class="fw-bold text-body-emphasis">Gestión de información, minería y procesamiento de datos</span><br><span class="small text-body-secondary">CET Colsubsidio · 48 h · <a class="link-underline-opacity-0" href="https://certificados.cetcolsubsidio.edu.co" target="_blank" rel="noopener">Validar ↗</a> <span class="text-nowrap">(código SECMPC-AAA-498939)</span></span></div>
+                  </li>
+                  <li class="row g-1 g-sm-2 py-2 border-top">
+                    <span class="col-sm-4 small text-uppercase text-body-secondary">Oct 2022</span>
+                    <div class="col-sm-8"><span class="fw-bold text-body-emphasis">Curso Práctico de JavaScript</span><br><span class="small text-body-secondary">Platzi · 19 h · <a class="link-underline-opacity-0" href="https://platzi.com/@juanma_520/" target="_blank" rel="noopener">Ver en Platzi ↗</a></span></div>
+                  </li>
+                  <li class="row g-1 g-sm-2 py-2 border-top">
+                    <span class="col-sm-4 small text-uppercase text-body-secondary">Oct 2022</span>
+                    <div class="col-sm-8"><span class="fw-bold text-body-emphasis">Curso Definitivo de HTML y CSS</span><br><span class="small text-body-secondary">Platzi · 23 h · <a class="link-underline-opacity-0" href="https://platzi.com/@juanma_520/" target="_blank" rel="noopener">Ver en Platzi ↗</a></span></div>
+                  </li>
+                  <li class="row g-1 g-sm-2 py-2 border-top">
+                    <span class="col-sm-4 small text-uppercase text-body-secondary">May 2022</span>
+                    <div class="col-sm-8"><span class="fw-bold text-body-emphasis">Fundamentos de Ingeniería de Software</span><br><span class="small text-body-secondary">Platzi · 16 h · <a class="link-underline-opacity-0" href="https://platzi.com/@juanma_520/" target="_blank" rel="noopener">Ver en Platzi ↗</a></span></div>
+                  </li>
+                  <li class="row g-1 g-sm-2 py-2 border-top">
+                    <span class="col-sm-4 small text-uppercase text-body-secondary">Dic 2021</span>
+                    <div class="col-sm-8"><span class="fw-bold text-body-emphasis">Fundamentos de Bases de Datos</span><br><span class="small text-body-secondary">Platzi · 26 h · <a class="link-underline-opacity-0" href="https://platzi.com/@juanma_520/" target="_blank" rel="noopener">Ver en Platzi ↗</a></span></div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+
+          <h3 class="subtitulo"># Habilidades técnicas</h3>
+          <div id="lista-habilidades"></div>
+          
+
+          <h3 class="subtitulo"># Habilidades blandas e idiomas</h3>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="badge border border-primary text-body-emphasis fw-normal fs-6 px-3 py-2">Pensamiento analítico</span>
+            <span class="badge border border-primary text-body-emphasis fw-normal fs-6 px-3 py-2">Resolución de problemas</span>
+            <span class="badge border border-primary text-body-emphasis fw-normal fs-6 px-3 py-2">Atención al detalle</span>
+            <span class="badge border border-primary text-body-emphasis fw-normal fs-6 px-3 py-2">Compromiso con la calidad</span>
+            <span class="badge border border-primary text-body-emphasis fw-normal fs-6 px-3 py-2">Trabajo en equipo</span>
+            <a class="badge border border-primary text-body-emphasis fw-normal fs-6 px-3 py-2 text-decoration-none" href="https://cert.efset.org/koGG2f" target="_blank" rel="noopener" title="EF SET · B2 Upper Intermediate (58/100), oct 2026 · Ver certificado">Inglés B2 (EF SET) ↗</a>
+            <span class="badge border border-primary text-body-emphasis fw-normal fs-6 px-3 py-2">Español nativo</span>
+          </div>
+
+          <h3 class="subtitulo mb-4"># Mis herramientas favoritas</h3>
+          <div class="row g-4">
+            <div class="col-xl-6 mb-3">
+              <h4 class="small text-secondary mb-3">{ } Desarrollo Frontend</h4>
+              <div class="row row-cols-3 row-cols-sm-4 g-3 text-center" id="iconos-front"></div>
+            </div>
+            <div class="col-xl-6 mb-3">
+              <h4 class="small text-secondary mb-3">[ ] Desarrollo Backend</h4>
+              <div class="row row-cols-3 row-cols-sm-4 g-3 text-center" id="iconos-back"></div>
+            </div>
+            <div class="col-xl-6 mb-3">
+              <h4 class="small text-secondary mb-3">◫ Bases de datos</h4>
+              <div class="row row-cols-3 row-cols-sm-4 g-3 text-center" id="iconos-bd"></div>
+            </div>
+            <div class="col-xl-6 mb-3">
+              <h4 class="small text-secondary mb-3">$ Herramientas</h4>
+              <div class="row row-cols-3 row-cols-sm-4 g-3 text-center" id="iconos-herramientas"></div>
+            </div>
+          </div>
+        </section>
+
+        <footer class="small text-body-secondary">Diseñado por Juan Manuel Rodríguez Lanza con la colaboración de Claude (Anthropic). Construido con HTML, CSS y JavaScript por Juan Manuel Rodríguez Lanza · 2026 · <a class="link-secondary" href="mailto:juanm520@gmail.com">juanm520@gmail.com</a></footer>
+      </main>
+    </div>
+  </div>
+
+  <!-- JavaScript modular: requiere abrirse con un servidor local (p. ej. Live Server) -->
+  <script type="module" src="index.js"></script>
+</body>
+</html>
